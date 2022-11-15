@@ -1,0 +1,503 @@
+<body>
+    <div class="items-center hero bg-slate-900">
+        <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <!--/////////////////////////////////- PROFILE SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <section id="prof" class="cardProfile">
+            <div class="flex justify-center items-center md:h-screen md:ml-20">
+                <div
+                    class="flex flex-col bg-slate-800 relative space-y-12 rounded-xl shadow-xl mt-24 sm:w-screen md:mt-0 md:w-1/2">
+                    <div class="flex flex-row items-center justify-center py-2">
+                        <h3 class="text-center text-white text-3xl uppercase">
+                            Account Information
+                        </h3>
+                    </div> 
+                    <div class="flex justify-center">
+                        <img src="assets/imgs/default-person.png" alt="" class="w-28 h-28 rounded-full bg-slate-800 border-4 border-emerald-500" />
+                    </div>
+                    <div class="flex flex-row w-full">
+                        <div class="flex flex-col w-1/2 space-y-16 md:space-y-7 px-6 py-3">
+                            <div class="flex flex-row space-x-4 justify-start items-end ">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="25" height="40">
+                                    <g class="fa-group">
+                                        <path fill="currentColor"
+                                            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                                            class="fa-secondary"></path>
+                                    </g>
+                                </svg>
+                                <h3 style="color: #b6e3f1;" class=" uppercase text-base md:text-xl font-bold ">
+                                    FULL NAME
+                                </h3>
+                            </div>
+                            <div class="flex flex-row info-display uppercase text-base profileTextHeader">
+                                {{currentUser?.firstName}}
+                                {{currentUser?.secondName}}
+                            </div>
+                            <div class="flex flex-row space-x-4 justify-start items-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="25" height="40">
+                                    <g class="fa-group">
+                                        <path fill="currentColor"
+                                            d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z"
+                                            class="fa-secondary w-2"></path>
+                                    </g>
+                                </svg>
+                                <h3 style="color: #b6e3f1;" class=" uppercase text-base md:text-xl font-bold">
+                                    Phone Number
+                                </h3>
+                            </div>
+                            <div class="flex flex-row info-display uppercase text-base profileTextHeader">
+                                {{currentUser?.phoneNumber}}
+
+                            </div>
+                            <div class="flex flex-row space-x-4 justify-start items-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25" height="30">
+                                    <g class="fa-group">
+                                        <path fill="currentColor"
+                                            d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"
+                                            class="fa-secondary w-2"></path>
+                                    </g>
+                                </svg>
+                                <h3 style="color: #b6e3f1;" class=" uppercase text-base md:text-xl font-bold">
+                                    Email
+                                </h3>
+
+                            </div>
+                            <div class="flex flex-row info-display uppercase text-base profileTextHeader">
+                                {{currentUser?.email}}
+
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-1/2 space-y-16 md:space-y-7 px-6 py-3">
+                            <div class="flex flex-row space-x-4 justify-start items-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="25" height="40">
+                                    <g class="fa-group">
+                                        <path fill="currentColor"
+                                            d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"
+                                            class="fa-secondary"></path>
+                                    </g>
+                                </svg>
+                                <h3 style="color: #b6e3f1;" class=" uppercase text-base md:text-xl font-bold">
+                                    Location
+                                </h3>
+
+                            </div>
+                            <div class="flex flex-row info-display uppercase text-base profileTextHeader">
+                                {{currentUser?.address}}
+
+                            </div>
+
+                            <div class="flex flex-row space-x-4 justify-start items-end">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="30" height="40">
+                                    <g class="fa-group">
+                                        <path fill="currentColor"
+                                            d="M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zM272 192H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H272c-8.8 0-16-7.2-16-16s7.2-16 16-16zM256 304c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H272c-8.8 0-16-7.2-16-16zM164.1 160v6.3c6.6 1.2 16.6 3.2 21 4.4c10.7 2.8 17 13.8 14.2 24.5s-13.8 17-24.5 14.2c-3.8-1-17.4-3.7-21.7-4.3c-12.2-1.9-22.2-.3-28.6 2.6c-6.3 2.9-7.9 6.2-8.2 8.1c-.6 3.4 0 4.7 .1 5c.3 .5 1 1.8 3.6 3.5c6.1 4.2 15.7 7.2 29.9 11.4l.8 .2c12.1 3.7 28.3 8.5 40.4 17.4c6.7 4.9 13 11.4 16.9 20.5c4 9.1 4.8 19.1 3 29.4c-3.3 19-15.9 32-31.6 38.7c-4.9 2.1-10 3.6-15.4 4.6V352c0 11.1-9 20.1-20.1 20.1s-20.1-9-20.1-20.1v-6.4c-9.5-2.2-21.9-6.4-29.8-9.1c-1.7-.6-3.2-1.1-4.4-1.5c-10.5-3.5-16.1-14.8-12.7-25.3s14.8-16.1 25.3-12.7c2 .7 4.1 1.4 6.4 2.1l0 0 0 0c9.5 3.2 20.2 6.9 26.2 7.9c12.8 2 22.7 .7 28.8-1.9c5.5-2.3 7.4-5.3 8-8.8c.7-4 .1-5.9-.2-6.7c-.4-.9-1.3-2.2-3.7-4c-5.9-4.3-15.3-7.5-29.3-11.7l-2.2-.7c-11.7-3.5-27-8.1-38.6-16c-6.6-4.5-13.2-10.7-17.3-19.5c-4.2-9-5.2-18.8-3.4-29c3.2-18.3 16.2-30.9 31.1-37.7c5-2.3 10.3-4 15.9-5.1v-6c0-11.1 9-20.1 20.1-20.1s20.1 9 20.1 20.1z"
+                                            class="fa-secondary w-2"></path>
+                                    </g>
+                                </svg>
+                                <h3 style="color: #b6e3f1;" class="uppercase text-base md:text-xl font-bold ">
+                                    Current balance
+                                </h3>
+                            </div>
+                            <div class="flex flex-row info-display uppercase text-base items-end ">
+                                <div class="text-base mb-2 text-start profileTextHeader ">
+                                    <span style="color:#05c069!important;" class="">$</span>
+                                        {{currentUser?.userWallet.balance}}   
+                                </div>  
+                            </div>
+                            <div class="flex flex-row space-x-4 justify-start items-end">
+                                <a onclick="editProfileSection()"><button
+                                        class="flex flex-row justify-start items-end shadow-xl btn-editProfile">
+                                        <svg class="mx-2" fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.00002 21.154C2.00002 16.6893 6.07022 15.0002 10 15.0002C11.2829 15.0002 12.5807 15.1802 13.7471 15.578"
+                                                stroke="black" stroke-linecap="round" />
+                                            <path
+                                                d="M14.3076 7.23664C14.3076 9.74643 14.0204 12.5384 9.99989 12.5384C5.9794 12.5384 5.6922 9.74643 5.6922 7.23664C5.6922 4.72685 7.62082 2.69226 9.99989 2.69226C12.379 2.69226 14.3076 4.72685 14.3076 7.23664Z"
+                                                stroke="black" />
+                                            <path
+                                                d="M14.4213 18.3197L19.3957 12.4213L20.0459 12.2487L21.8155 13.7411L21.7551 14.4112L16.7808 20.3095L14.1798 20.9998L14.4213 18.3197Z"
+                                                stroke="black" />
+                                            <path d="M18.4635 13.3828L20.885 15.5353" stroke="black" />
+                                        </svg> Edit Profile
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--////////////////////////////////////////////- END OF PROFILE SECTION -/////////////////////////////////////////////////////////////////////////-->
+
+        <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <!--////////////////////////////////////////////- EDIT PROFILE SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <section id="editProfile" class="cardOptions">
+            <div class="flex justify-center items-center md:h-screen md:ml-20">
+                <div class="flex flex-col bg-slate-700 relative space-y-12 rounded-xl shadow-lg sm:w-screen md:w-1/3">
+                    <div class="py-2">
+                        <h3 class="text-center text-white text-3xl uppercase">
+                            update profile
+                        </h3>
+                    </div>
+                    <div class="flex justify-center ">
+                        <img src="assets/imgs/default-person.png" alt=""
+                            class="w-28 h-28 rounded-full bg-slate-700 border-4 border-emerald-500" />
+                    </div>
+                    <div class="flex flex-col justify-start items-start">
+                        <form (ngSubmit)="updateProfile()" #form="ngForm" enctype="multipart/form-data"
+                            class="flex flex-col justify-center items-start ml-17">
+                            <div class="flex flex-col">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                    First Name
+                                </label>
+                                <input type="text" placeholder="{{currentUser?.firstName}}"
+                                    [(ngModel)]="updatedUser.firstName" name="firstName"
+                                    class="input-field-profileEdit text-white text-lg">
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                    Surname
+                                </label>
+                                <input type="text" placeholder="{{currentUser?.secondName}}"
+                                    [(ngModel)]="updatedUser.secondName" name="secondName"
+                                    class="input-field-profileEdit  text-white text-lg">
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                    Phone-Number
+                                </label>
+                                <input type="text" placeholder="{{currentUser?.phoneNumber}}"
+                                    [(ngModel)]="updatedUser.phoneNumber" name="phoneNumber"
+                                    class="input-field-profileEdit text-white text-lg">
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                    address
+                                </label>
+                                <input type="text" placeholder="{{currentUser?.address}}"
+                                    [(ngModel)]="updatedUser.address" name="address"
+                                    class="input-field-profileEdit text-white text-lg">
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                    email
+                                </label>
+                                <input type="text" placeholder="{{currentUser?.email}}" [(ngModel)]="updatedUser.email"
+                                    name="email" class="input-field-profileEdit text-white text-lg">
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                    Profile Picture
+                                </label>
+
+                                <input type="file" multiple value="select" #selectFile (change)="onFileSelected($event)"
+                                    class="input-field-profileEdit text-white text-lg">
+                            </div>
+                            <button type="submit" class="btn-confirmation ml-17">Confirm</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--////////////////////////////////////////////- END OF EDIT PROFILE SECTION -/////////////////////////////////////////////////////////////////////////-->
+
+        <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <!--////////////////////////////////////////////- WITHDRAW SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <section id="trans" class="cardOptions">
+            <div class="flex flex-col justify-center items-center md:h-screen md:ml-20">
+                <div
+                    class="flex flex-col bg-slate-800 relative space-y-7 rounded-xl shadow-lg sm:w-screen md:mt-0 md:w-1/2">
+                    <div class="py-4">
+                        <h3 class="text-center text-white text-3xl uppercase">
+                            Withdraw
+                        </h3>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="rounded-xl bg-slate-700 p-3 w-2/3">
+                            <p class="text-center text-yellow-400 text-sm uppercase">
+                                In order to tranfer money from your account to another user you will<br />
+                                be required
+                                the <strong style="color:#05c069;" class="text-lg">BANK KEY</strong> or <strong
+                                    style="color:#05c069;" class="text-lg">ALIAS TAG</strong> from the account you want to
+                                tranfer money to.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <form form (ngSubmit)="transferRequestData()"
+                            class="flex flex-col justify-center items-center ">
+                            <input type="text" placeholder="BANK KEY OR ALIAS TAG" class="text-center input-cvu-alias"
+                                [(ngModel)]="walletData.data" name="data" />
+                            <button [@buttonChecked]="tranferDataButtonCheck ? 'checked' : 'unchecked' "
+                                style="background-color: rgb(156, 156, 23)!important;" type="submit"
+                                class="submit-btn-tranfer text-center text-slate-700">
+                                CHECK
+                            </button>
+                        </form>
+                        <button [@buttonChecked]="tranferDataCheck ? 'checked' : 'unchecked' "
+                            onclick="transferSecondStage()" type="submit"
+                            class="submit-btn-tranfer text-center text-slate-700">
+                            Continue
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--////////////////////////////////////////////- END OF WITHDRAW SECTION -/////////////////////////////////////////////////////////////////////////-->
+
+        <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <!--////////////////////////////////////////////- CONFIRM WITHDRAW SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <section id="transConfirm" class="cardOptions">
+            <div class="flex flex-col justify-center items-center md:h-screen md:ml-20">
+                <div class="flex flex-col bg-slate-800 relative space-y-7 rounded-xl shadow-lg md:mt-0 md:w-1/2">
+                    <div class="py-4">
+                        <h3 class="text-center text-white text-3xl uppercase">
+                            Confirm withdrawal
+                        </h3>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="rounded-xl bg-slate-700 shadow-lg p-3 space-y-4 w-2/3">
+                            <p class="text-center text-yellow-400 text-sm uppercase">
+                                You are about to tranfer money to:
+                            </p>
+                            <div
+                                class="flex flex-row justify-center items-center text-center text-3xl text-userTranfer">
+                                {{ users?.firstName }}
+                                {{ users?.secondName }}
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <form form (ngSubmit)="transferConfirmed()"
+                                class="flex flex-col justify-center items-center ">
+                                <div class="flex flex-row justify-center items-center">
+                                    <label class="text-9xl text-center text-userTranfer">$ </label>
+                                    <input type="text" placeholder="0"
+                                        class="text-9xl input-field-money text-center text-white"
+                                        [(ngModel)]="transactionData.balance" name="balance" />
+                                </div>
+                                <div
+                                    class="flex flex-row rounded-lg balance-data justify-end items-center bg-slate-700">
+                                    <div class="uppercase" style="color: white;">Current BALANCE:&nbsp;</div>
+                                    <div class="uppercase " style="color: #05c069;">${{currentUser?.userWallet.balance}}
+                                    </div>
+                                </div>
+                                <button type="submit"
+                                    class="submit-btn-tranfer text-center text-slate-700">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--////////////////////////////////////////////- END OF CONFIRM WITHDRAW SECTION -/////////////////////////////////////////////////////////////////////////-->
+
+        <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <!--////////////////////////////////////////////- DEPOSIT SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <section id="dep" class="cardOptions">
+            <div class="flex flex-col justify-center items-center md:h-screen md:ml-20">
+
+                <div class="flex flex-col bg-slate-800  relative space-y-4 rounded-xl shadow-lg sm:w-3/4 md:w-1/3">
+                    <div class="py-2">
+                        <h3 class="text-center text-white text-3xl uppercase">
+                            Deposit information
+                        </h3>
+                    </div>
+                    <div class="flex flex-col w-full justify-center items-center space-y-4">
+                        <div class="text-xl text-white text-bold text-center">
+                            <h2 style="color:#05c069;">BANK KEY</h2>
+                        </div>
+                        <div class="flex-flex-col walletInfo text-xl text-white text-center w-full">
+                            <div class="py-2">
+                                {{ currentUser?.userWallet.cvu}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full justify-center items-center space-y-4">
+                        <div class="text-xl text-white text-bold text-center">
+                            <h2 style="color:#05c069;">ALIAS TAG</h2>
+                        </div>
+                        <div class="flex-flex-col walletInfo  text-lg text-white text-center w-full">
+                            <div class="py-2 mb-12">
+                                {{ currentUser?.userWallet.alias}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--////////////////////////////////////////////- END OF DEPOSIT SECTION -/////////////////////////////////////////////////////////////////////////-->
+
+        <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <!--////////////////////////////////////////////- ACTIVITY SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <section id="activity" class="cardOptions">
+            <div class="flex justify-center items-center md:h-screen md:ml-20">
+                <div class="flex flex-col bg-slate-800 relative space-y-7 rounded-xl shadow-lg sm:w-screen md:w-1/3">
+                    <div class="py-2">
+                        <h3 class="text-start text-white text-2xl ml-4 uppercase">
+                            Account Activity
+                        </h3>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col w-full justify-start activity-status items-start"
+                            *ngFor="let item of activiySent | reverse ">
+                            <div class="flex flex-row px-3">
+                                <div class="text-base text-start activity-feed ml-2">You have sent:</div>
+                                <div class="text-lg text-start activity-feed ml-auto mr-4">-&nbsp;<strong
+                                        class="activity-feed" style="color: red!important">${{item.balance}}</strong>
+                                </div>
+                            </div>
+                            <div class="text-sm text-start activity-feed ml-5"
+                                style="color:rgb(182, 182, 182)!important"> {{item.activityDate}}</div>
+                            <div class="text-base text-start activity-feed py-2 ml-auto mr-4">
+                                TO&nbsp;{{item.userTransfered.firstName}}&nbsp;{{item.userTransfered.secondName}}</div>
+                        </div>
+                        <div class="flex flex-col w-full justify-start activity-status items-start"
+                            *ngFor="let item2 of activityReceived | reverse">
+                            <div class="flex flex-row px-3">
+                                <div class="text-base text-start activity-feed ml-2">You have received:</div>
+                                <div class="text-lg text-start activity-feed ml-auto mr-4">+&nbsp;<strong
+                                        class="activity-feed"
+                                        style="color: #05c069!important">${{item2.balance}}</strong></div>
+                            </div>
+                            <div class="text-sm text-start activity-feed ml-5"
+                                style="color:rgb(182, 182, 182)!important"> {{item2.activityDate}}</div>
+                            <div class="text-base text-start activity-feed py-2 ml-auto mr-4">
+                                FROM&nbsp;{{item2.userOnline.firstName}}&nbsp;{{item2.userTransfered.secondName}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--////////////////////////////////////////////- END OF ACTIVITY SECTION -/////////////////////////////////////////////////////////////////////////-->
+
+        <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+        <!--////////////////////////////////////////////- SETTINGS SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <section id="settings" class="cardOptions">
+            <div class="flex justify-center items-center md:h-screen md:ml-20">
+                <div
+                    class="flex flex-col bg-slate-800 relative justify-center items-center space-y-4 rounded-xl shadow-lg sm:w-2/3 md:w-1/3">
+                    <div class="py-2">
+                        <h3 class="text-center text-white text-3xl uppercase">
+                            Settings
+                        </h3>
+                    </div>
+                    <div class="flex flex-col setting-option rounded-lg ">
+                        <a onclick="changePasswordSection()" class="text-lg text-center py-2 px-3 settings-text"> Change Password </a>
+                    </div>
+                    <div class="flex flex-col setting-option rounded-lg ">
+                        <a (click)="changeTheme()" class="text-lg text-center py-2 px-3 settings-text"> Change theme </a>
+                    </div>
+                    <div class="flex flex-col setting-option rounded-lg ">
+                        <a (click)="contactSupport()" class="text-lg text-center py-2 px-3 settings-text"> contact support </a>
+                    </div>
+                    <div class="flex flex-col setting-option rounded-lg" style="border-color: red!important;">
+                        <a (click)="deleteAccount()" class="text-lg text-center py-2 px-3 settings-text " > delete account
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--////////////////////////////////////////////- END OF SETTINGS SECTION -/////////////////////////////////////////////////////////////////////////-->
+               <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <!--////////////////////////////////////////////- CHANGE PASSWORD SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <section id="passwordChange" class="cardOptions">
+            <div class="flex justify-center items-center md:h-screen md:ml-20">
+                <div
+                    class="flex flex-col bg-slate-800 relative space-y-4 rounded-xl shadow-lg sm:w-2/3 md:w-1/4">
+                    <div class="py-2">
+                        <h3 class="text-start text-white text-2xl ml-4 mb-5 uppercase">
+                            Change Password
+                        </h3>
+                    </div>
+                    <form (ngSubmit)="changePassword()" class="flex flex-col">
+                     <label class="text-lg text-white font-semibold ml-4 uppercase">New password</label>   
+                    <input type="password" class="input-field-password text-xl" [(ngModel)]="updatePassword.password" name="password">
+                    <label  class="text-lg text-white font-semibold ml-4 uppercase">repeat new Password</label>    
+                    <input type="password" class="input-field-password text-xl" [(ngModel)]="updatePassword.repeatPassword" name="repeatPassword">
+                    <button type="submit" class="btn-submitPassword"> Continue</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--////////////////////////////////////////////- END OF CHANGE PASSWORD SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <!--////////////////////////////////////////////- CRYPTO CHART SECTION -/////////////////////////////////////////////////////////////////////////-->
+        <section id="crypto" class="cardOptions">
+            <div class="flex justify-center items-center md:h-screen md:ml-20 ">
+                <div class="flex flex-col bg-slate-800 relative space-y-2 rounded-xl shadow-lg sm:w-2/3 md:w-2/3">
+                    <div class="py-2">
+                        <h3 class="text-start text-white text-2xl ml-4 uppercase">
+                            crypto market
+                        </h3>
+                    </div>
+                    <div class="flex flex-row cryptoTableHead mx-2">
+                        <div class="flex justify-center items-center">
+                            <h1 class="ml-4">#</h1>
+                        </div>
+                        <div class="flex justify-end items-center m-auto">
+                            <h1 class="">Coin</h1>
+                        </div>
+                        <div class="flex justify-end items-center m-auto">
+                            <h1 class="">Price / USD</h1>
+                        </div>
+                        <div class="flex justify-end items-center m-auto">
+                            <h1 class="">Price-change / 24hs</h1>
+                        </div>
+                        <div class="flex justify-end items-center m-auto">
+                            <h1 class="">Total volume / 24hs</h1>
+                        </div>
+                    </div>
+                    <div class="flex flex-col" *ngFor="let currency of coins; let i = index">
+                        <div class="flex flex-row justify-start items-center cryptoTableHead mx-2 ">
+                            <div class=" indexTable ">
+                                {{i + 1}}
+                            </div>
+                            <div class="cryptoMainInfo md:w-25rem xl:w-15rem">
+                                <div class="mx-2 ">
+                                    <img [src]="currency.image" alt="" style="width: 2rem;">
+                                </div>
+
+                                <div class="ml-2 text-lg ">
+                                    {{currency.name}}
+                                </div>
+                                <div class="text-sm  ml-2 " style="color: #7e7e7e;">
+                                    ({{currency.symbol}})
+                                </div>
+                            </div>
+
+                            <div class="cryptoPriceInfo">
+                                <h1 class="text-base ">
+                                    ${{currency.current_price.toLocaleString()}}
+                                </h1>
+                            </div>
+
+                            <div class="cryptoPriceInfo">
+                                <h1 class="text-base" [ngClass]="currency.price_change_percentage_24h > 0 ? 'text-success' : 'text-danger'">
+                                    {{currency.price_change_percentage_24h.toLocaleString()}}%
+                                </h1>
+                            </div>
+
+                            <div class="cryptoPriceInfo">
+                                <h1 class="text-base">
+                                    {{currency.total_volume.toLocaleString()}}
+                                </h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!--////////////////////////////////////////////- END OF CRYPTO CHART SECTION -/////////////////////////////////////////////////////////////////////////-->
+                 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    </div>
+</body>
+<app-navbar> </app-navbar>

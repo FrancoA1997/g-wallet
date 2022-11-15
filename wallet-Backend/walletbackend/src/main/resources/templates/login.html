@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    
+    <title>Login/Register</title>
+</head>
+<body>
+    
+    <section>
+    <div class="hero bg-zinc-900">
+        <div class=" bg-white  rounded-2xl form-box">
+            <div class="flex flex-row button-box">
+                <div id="btn"></div>
+                <button id="log" type="button" class="toggle-btn text-white strong" onclick="login()">Login</button>
+                <button id="reg" type="button" class="toggle-btn text-black strong" onclick="register()">Register</button>
+               
+            </div>
+            <div class="flex flex-row social-icons justify-center">
+                <img src="imgs/iconmonstr-github-1.svg" alt="">
+                <img src="imgs/iconmonstr-linkedin-5.svg" alt="">
+            </div>
+            <form id="login" action="logincheck" method="POST" class="input-group">
+                <input type="text" class="input-field" placeholder="Email address" name="userEmail" th:value="${userEmail}"  required>
+                <input type="text" class="input-field" placeholder="Password"  name="userPassword" th:value="${userPassword}" required>
+                <input type="checkbox" class="check-box" placeholder="check-box" required><span>Remember password</span>
+                <button type="submit" class="submit-btn text-white">Log in</button>
+            </form>
+            <form id="register" action="register" method="POST" class="input-group">
+                <input type="text" class="input-field" placeholder="Name" name="name" th:value="${name}" required>
+                <input type="text" class="input-field" placeholder="Surname" name="surname" th:value="${surname}" required>
+                <input type="text" class="input-field" placeholder="Password" name="psw1" th:value="${psw1}" required>
+                <input type="text" class="input-field" placeholder="Email address" name="email2" th:value="${email2}" required>
+                <input type="checkbox" class="check-box" placeholder="check-box" required><span>I agree to the terms & conditions
+                </span>
+                <button type="submit" class="submit-btn text-white">Register</button>
+            </form>
+        </div>
+        
+      
+    </div>
+
+    
+</section>
+<script src="/login-script.js"></script>
+</body>
+</html>

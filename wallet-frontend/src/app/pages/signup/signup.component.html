@@ -1,0 +1,34 @@
+
+    <div class="hero scrolling-image-container">
+        <div class="scrolling-image">
+        <div class=" bg-slate-800   rounded-2xl form-box">
+            <div class="flex flex-row button-box">
+                <div id="btn"></div>
+                <button id="log" type="button" class="toggle-btn strong text-white" onclick="login()">Login</button>
+                <button id="reg" type="button" class="toggle-btn strong" style="color: #05c069;" onclick="register()">Register</button>
+               
+            </div>
+            <div class="flex flex-row social-icons justify-center">
+                <img src="assets/imgs/iconmonstr-github-1.svg" class="social-img" alt="">
+                <img src="assets/imgs/iconmonstr-linkedin-5.svg" class="social-img" alt="" >
+            </div>
+            <form id="login" form (ngSubmit) = "loginSubmit()" class="input-group mt-auto">
+                <input type="email" class="input-field" placeholder="Email address" required [(ngModel)] = "userLog.username" name = "username" >
+                <input type="text" class="input-field" placeholder="Password"  required [(ngModel)] = "userLog.password" name = "password">
+                <button type="submit" class="submit-btn text-white login-button-bottom-fixed">Log in</button>
+            </form>
+            
+            <form form (ngSubmit) = "registerSubmit()" id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Name" required [(ngModel)] = "userReg.firstName" name = "firstName">
+                <input type="text" class="input-field" placeholder="Surname" required [(ngModel)] = "userReg.secondName" name = "secondName">
+                <input type="text" class="input-field" placeholder="Password" required [(ngModel)] = "userReg.password" name = "password">
+                <input type="email" class="input-field" placeholder="Email address" required [(ngModel)] = "userReg.email" name = "email" required [(ngModel)] = "userReg.username" name = "username">
+                <button type="submit" class="submit-btn text-white register-button-bottom-fixed">Register</button>
+            </form>
+        </div>
+    </div>
+    
+    </div>
+
+    
+
