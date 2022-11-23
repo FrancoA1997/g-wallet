@@ -53,3 +53,6 @@ import {NgPipesModule} from 'ngx-pipes';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+

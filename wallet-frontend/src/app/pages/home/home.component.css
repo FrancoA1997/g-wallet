@@ -586,6 +586,9 @@ video {
 .mt-24 {
   margin-top: 6rem;
 }
+.mt-32 {
+  margin-top: 12rem;
+}
 
 .flex {
   display: flex;
@@ -880,97 +883,12 @@ margin: 0;}
   background: url("https://fontawesome.com/icons/user?s=solid&f=classic");
 }
 
-@media (min-width: 374px) {
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-  .sm\:w-1\/3 {
-    width: 33%;
-  }
-  .sm\:w-2\/3 {
-    width: 75%;
-  }
-  .sm\:w-3\/4 {
-    width: 85%;
-  }
-  .sm\:w-screen {
-    width: 100vw;
-  }
-}
 
-@media (min-width: 1200px) {
-  .md\:w-25rem{
-    width: 25rem;
-  }
-
-  .md\:w-1\/3 {
-      width: 33.333333%;
-  }
-  .md\:w-2\/3 {
-    width: 66.666667%;
-  }
-  .md\:w-1\/4 {
-    width: 25%;
-}
-}
-@media (min-width: 1700px) {
-  .xl\:w-15rem{
-    width: 15rem;
-  }
-
-  .xl\:w-1\/3 {
-      width: 33.333333%;
-  }
-  .xl\:w-2\/3 {
-    width: 66.666667%;
-  }
-  .xl\:w-1\/4 {
-    width: 25%;
-}
-}
-
-@media (min-width: 768px) {
-  .md\:m-auto {
-    margin: auto;
-  }
-
-  .md\:mt-auto {
-    margin-top: auto;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .md\:h-screen {
-    height: 100vh;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:space-y-7 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-}
 .hero{
   height: 100%;
   width: 100%;
   background-position: center;
-  position: absolute;
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1137,8 +1055,8 @@ Padding LEFT AND RIGHT
   padding-right: 0.75rem;
 }
 .mx-3 {
-  margin-left: 0.75rem/* 12px */;
-  margin-right: 0.75rem/* 12px */;
+  margin-left: 0.75rem !important/* 12px */;
+  margin-right: 0.75rem !important/* 12px */;
 }
 .mx-1 {
   margin-left: 0.25rem/* 4px */;
@@ -1190,11 +1108,7 @@ Margin LEFT
 .ml-17 {
   margin-left: 5.3rem/* 64px */;
 }
-@media (min-width: 768px) {
-  .md\:ml-20 {
-    margin-left: 5rem/* 80px */;
-    }
-}
+
 .text-slate-700 {
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
@@ -1391,5 +1305,263 @@ margin-bottom: 15px!important;
   border-width: 2px 0px 0px 0px;
   border-color: rgb(13, 26, 43);
   padding-top: 0.5rem;
+}
+/* MEDIA SMALL*/
+@media (min-width: 480px) {
+  .display-on{
+    display: none;
+  }
+}
+@media (min-width: 1151px) {
+  .xxl\:disabled2{
+    display: none;
+  }
+}
+/* MEDIA SECTION-MOBILE*/
+@media (max-width: 1150px) {
+
+  .mb\:cryptoTableHead{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    --tw-bg-opacity: 1;
+    background-color: rgb(15, 25, 39);
+    margin-bottom: 0.6rem;
+    border-radius: 3px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+    box-shadow: #141418;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+  }
+  .mb\:indexTable{
+    font-weight: 500;
+    color: white;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.2rem;
+    padding-right: 0.4rem;
+    font-size: x-small;
+  }
+  .mb\:m-auto{
+    margin-left:auto;
+   }
+  .mb\:disabled{
+    display: none;
+  }
+  .mb\:cryptoMainInfo{
+   
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .mb\:cryptoPriceInfo{
+    margin-left: auto;
+    width: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .mb\:text-xs {
+    font-size: 0.75rem/* 12px */;
+    line-height: 1rem/* 16px */;
+}
+.mb\:text-xxs {
+  font-size: 0.45rem/* 12px */;
+  line-height: 1rem/* 16px */;
+}
+.mb\:text-sm {
+  font-size: 0.875rem/* 14px */;
+  line-height: 1.25rem/* 20px */;
+}
+.mb\:text-custom {
+  font-size: 4rem/* 128px */;
+  line-height: 1;
+}
+.mb\:text-xl {
+  font-size: 1.25rem/* 20px */;
+  line-height: 1.75rem/* 28px */;
+}
+  .mb\:w-full{
+    width: 100%;
+  }
+  .mb\:w-semi-full{
+    width: 95%;
+  }
+  .mb\:mt-12 {
+    margin-top: 3rem/* 32px */;
+}
+.mb\:mt-8 {
+  margin-top: 2rem/* 32px */;
+}
+.mb\:mt-34 {
+  margin-top: 8rem/* 144px */;
+}
+.mb\:ml-0 {
+  margin-left: 0rem/* 0px */;
+}
+  .mb\:btn-editProfile{
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-weight: 550;
+    position: relative;
+    margin-top: 2rem;
+    left: px;
+    padding: 0.5rem;
+    border-radius: 3px;
+    width: 100%;
+    background-color:  #05c069;
+    cursor: pointer;
+  }
+  .mb\:profileTextHeader{
+    width: 65%;
+    border-width: 2px 0px 0px 0px;
+    border-color: rgb(13, 26, 43);
+  }
+  .mb\:mx-3 {
+    margin-left: 0.75rem/* 12px */;
+    margin-right: 0.75rem/* 12px */;
+}
+.mb\:mx-0{
+  margin-left: 0rem/* 0px */;
+  margin-right: 0rem/* 0px */;
+}
+  .mb\:info-display{
+    letter-spacing: 1.2px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 40px;
+    color:  #ffffff;
+    font-weight: 400;
+  }
+  .mb\:justify-start {
+    justify-content: start;
+}
+ 
+.mb\:py-1 {
+  padding-top: 0.25rem/* 4px */;
+  padding-bottom: 0.25rem/* 4px */;
+}
+.mb\:text-xl {
+font-size: 1.25rem/* 20px */;
+line-height: 1.75rem/* 28px */;
+} 
+  .mb\:h-5 {
+  height: 5rem/* 24px */;
+}
+.mb\:w-5 {
+  width: 5rem/* 24px */;
+}
+  .mb\:flex-col {
+    flex-direction: column;
+  }
+  .mb\:space-y-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.mb\:w-2\/3 {
+  width: 75%;
+}
+.mb\:w-screen {
+  width: 100vw;
+}
+}
+@media (min-width: 374px) {
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+ 
+  .sm\:w-1\/3 {
+    width: 33%;
+  }
+  .sm\:w-2\/3 {
+    width: 75%;
+  }
+  .sm\:w-3\/4 {
+    width: 85%;
+  }
+  .sm\:w-screen {
+    width: 100vw;
+  }
+}
+
+
+/* MEDIA LARGE-MEDIUM*/
+@media screen and(min-width: 769px) {
+  .md\:display-on{
+    display: block;
+  }
+}
+@media (min-width: 1700px) {
+  .xl\:w-15rem{
+    width: 15rem;
+  }
+
+  .xl\:w-1\/3 {
+      width: 33.333333%;
+  }
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+  .xl\:w-1\/4 {
+    width: 25%;
+}
+}
+@media (min-width: 1151px) {
+  .md\:w-25rem{
+    width: 25rem;
+  }
+  .md\:ml-20 {
+    margin-left: 5rem/* 80px */;
+    }
+
+  .md\:w-1\/3 {
+      width: 33.333333%;
+  }
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
+  .md\:w-1\/4 {
+    width: 25%;
+}
+.md\:m-auto {
+  margin: auto;
+}
+
+.md\:mt-auto {
+  margin-top: auto;
+}
+
+.md\:mt-0 {
+  margin-top: 0px;
+}
+
+
+
+.md\:w-1\/2 {
+  width: 50%;
+}
+
+.md\:space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.md\:px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.md\:text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 }
 

@@ -1,2 +1,2 @@
-let baseUrl = 'http://walletservice-env.eba-b5h2euim.us-east-1.elasticbeanstalk.com'
+let baseUrl = 'http://localhost:5000'
 export default baseUrl;

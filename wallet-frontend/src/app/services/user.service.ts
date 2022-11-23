@@ -16,10 +16,12 @@ export class UserService {
   constructor(private httpClient: HttpClient) { }
 
   public registerUser(userReg: any) {
+    
     return this.httpClient.post(`${baseUrl}/user/`, userReg)
   }
   //JWT GENERATION
   public generateToken(userLog: any) {
+    console.log(baseUrl);
     return this.httpClient.post(`${baseUrl}/generate-token`, userLog)
   }
 

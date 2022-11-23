@@ -346,6 +346,19 @@ export class HomeComponent implements OnInit {
       
     });
   }
+  public logout(){
+    this.userService.logout();
+    window.location.reload();
+    Swal.fire({
+      title: 'See you soon!',
+      icon:'success',
+      color:'white',
+      confirmButtonText: 'Exit',
+      confirmButtonColor: '#151720',
+      background:'#334155',
+    }
+    )
+  }
   contactSupport(){
     this.snack.open('Coming soon!', 'Ok', {
       duration: 3000,
