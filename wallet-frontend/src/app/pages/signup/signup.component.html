@@ -14,14 +14,14 @@
             </div>
             <form id="login" form (ngSubmit) = "loginSubmit()" class="input-group mt-auto">
                 <input type="email" class="input-field" placeholder="Email address" required [(ngModel)] = "userLog.username" name = "username" >
-                <input type="text" class="input-field" placeholder="Password"  required [(ngModel)] = "userLog.password" name = "password">
+                <input type="password" class="input-field" placeholder="Password"  required [(ngModel)] = "userLog.password" name = "password">
                 <button type="submit" class="submit-btn text-white login-button-bottom-fixed">Log in</button>
             </form>
             
             <form form (ngSubmit) = "registerSubmit()" id="register" class="input-group">
                 <input type="text" class="input-field" placeholder="Name" required [(ngModel)] = "userReg.firstName" name = "firstName">
                 <input type="text" class="input-field" placeholder="Surname" required [(ngModel)] = "userReg.secondName" name = "secondName">
-                <input type="text" class="input-field" placeholder="Password" required [(ngModel)] = "userReg.password" name = "password">
+                <input type="password" class="input-field" placeholder="Password" required [(ngModel)] = "userReg.password" name = "password">
                 <input type="email" class="input-field" placeholder="Email address" required [(ngModel)] = "userReg.email" name = "email" required [(ngModel)] = "userReg.username" name = "username">
                 <button type="submit" class="submit-btn text-white register-button-bottom-fixed">Register</button>
             </form>
