@@ -1,11 +1,11 @@
-<body class=" bg-slate-900">
+<body class="">
     <div class="hero bg-slate-900">
         <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
         <!--/////////////////////////////////- PROFILE SECTION -/////////////////////////////////////////////////////////////////////////-->
         <section id="prof" class="cardProfile">
             <div class="flex justify-center items-center md:h-screen  md:ml-20">
                 <div
-                    class="flex flex-col bg-slate-800 relative space-y-12 rounded-xl shadow-xl mt-32  sm:w-screen md:w-1/2  mb:space-y-3 mb:mt-8 mb:mx-3 mb:h-screen">
+                    class="flex flex-col bg-slate-800 relative space-y-12 rounded-xl shadow-xl mt-32  sm:w-screen md:w-1/2 mb:space-y-3  mb:mt-6 mb:mx-3 mb:h-screen">
                     <div class="flex flex-row items-center justify-center py-2 mb:py-1">
                         <h3 class="text-center text-white text-3xl uppercase mb:text-xl">
                             Account Information
@@ -13,10 +13,10 @@
                       
                     </div> 
                     <div class="flex justify-center">
-                        <img src="assets/imgs/default-person.png" alt="" class="w-28 h-28 rounded-full bg-slate-800 border-4 border-emerald-500 mb:h-5 mb:w-5" />
+                        <img src="assets/imgs/default-person.png" alt="" class="w-28 h-28 rounded-full bg-slate-800 border-4 border-emerald-500 mb:border-2 mb:h-3 mb:w-3" />
                     </div>
                     <div class="flex flex-row w-full mb:flex-col">
-                        <div class="flex flex-col w-1/2  md:space-y-7 px-6 py-3 mb:w-full mb:space-y-3">
+                        <div class="flex flex-col w-1/2  md:space-y-7 px-6 py-3 mb:w-full mb:space-y-2">
                             <div class="flex flex-row space-x-4 justify-start items-end ">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="25" height="40">
                                     <g class="fa-group">
@@ -25,18 +25,18 @@
                                             class="fa-secondary"></path>
                                     </g>
                                 </svg>
-                                <div class="flex flex-row space-x-2">
-                                <h3 style="color: #b6e3f1;" class=" uppercase text-base md:text-xl font-bold ">
+                                <div class="flex flex-row  space-x-2">
+                                <h3 style="color: #b6e3f1;" class="mb:text-sm uppercase text-base md:text-xl font-bold ">
                                     FULL 
                                 </h3>
-                                <h3 style="color: #b6e3f1;" class=" uppercase text-base md:text-xl font-bold ">
+                                <h3 style="color: #b6e3f1;" class="mb:text-sm uppercase text-base md:text-xl font-bold ">
                                      NAME
                                 </h3>
                             </div>
                             </div>
                             <div class="flex flex-row info-display space-x-2 uppercase text-base profileTextHeader mb:info-display mb:profileTextHeader">
-                               <div class="mb:py-1"> {{currentUser?.firstName}}</div>
-                               <div class="mb:py-1"> {{currentUser?.secondName}}</div>
+                               <div class="mb:py-1 mb:text-md"> {{currentUser?.firstName}}</div>
+                               <div class="mb:py-1 mb:text-md"> {{currentUser?.secondName}}</div>
                             </div>
                             <div class="flex flex-row space-x-4 justify-start items-end">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="25" height="40">
@@ -47,16 +47,16 @@
                                     </g>
                                 </svg>
                                 <div class="flex flex-row space-x-2">
-                                    <h3 style="color: #b6e3f1;" class=" uppercase text-sm md:text-xl font-bold ">
+                                    <h3 style="color: #b6e3f1;" class="mb:text-sm uppercase text-sm md:text-xl font-bold ">
                                         PHONE
                                     </h3>
-                                    <h3 style="color: #b6e3f1;" class=" uppercase text-sm md:text-xl font-bold ">
+                                    <h3 style="color: #b6e3f1;" class="mb:text-sm uppercase text-sm md:text-xl font-bold ">
                                          NUMBER
                                     </h3>
                                 </div>
                             </div>
                             <div class="flex flex-row info-display uppercase text-base profileTextHeader mb:info-display mb:profileTextHeader">
-                                <div class="mb:py-1">{{currentUser?.phoneNumber}}</div>
+                                <div class="mb:py-1 mb:text-md">{{currentUser?.phoneNumber}}</div>
 
                             </div>
                             <div class="flex flex-row space-x-4 justify-start items-end">
@@ -67,17 +67,17 @@
                                             class="fa-secondary w-2"></path>
                                     </g>
                                 </svg>
-                                <h3 style="color: #b6e3f1;" class=" uppercase text-base md:text-xl font-bold">
+                                <h3 style="color: #b6e3f1;" class="mb:text-sm uppercase text-base md:text-xl font-bold">
                                     Email
                                 </h3>
 
                             </div>
                             <div class="flex flex-row info-display uppercase text-base profileTextHeader mb:info-display mb:profileTextHeader">
-                                <div class="mb:py-1">  {{currentUser?.email}}</div>
+                                <div class="mb:py-1 mb:text-md">  {{currentUser?.email}}</div>
 
                             </div>
                         </div>
-                        <div class="flex flex-col w-1/2 mb:space-y-3 md:space-y-7 px-6 py-3 mb:w-full">
+                        <div class="flex flex-col w-1/2 md:space-y-7 mb:space-y-2 px-6 py-3 mb:w-full">
                             <div class="flex flex-row space-x-4 justify-start items-end">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="25" height="40">
                                     <g class="fa-group">
@@ -86,16 +86,13 @@
                                             class="fa-secondary"></path>
                                     </g>
                                 </svg>
-                                <h3 style="color: #b6e3f1;" class=" uppercase text-base md:text-xl font-bold">
+                                <h3 style="color: #b6e3f1;" class="mb:text-sm uppercase text-base md:text-xl font-bold">
                                     Location
                                 </h3>
-
                             </div>
                             <div class="flex flex-row info-display uppercase text-base profileTextHeader mb:info-display mb:profileTextHeader">
-                                <div class="mb:py-1"> {{currentUser?.address}}</div>
-
+                                <div class="mb:py-1 mb:text-md"> {{currentUser?.address}}</div>
                             </div>
-
                             <div class="flex flex-row space-x-4 justify-start items-end">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="30" height="40">
                                     <g class="fa-group">
@@ -105,10 +102,10 @@
                                     </g>
                                 </svg>
                                 <div class="flex flex-row space-x-2 ">
-                                    <h3 style="color: #b6e3f1;" class=" uppercase text-sm md:text-xl font-bold ">
+                                    <h3 style="color: #b6e3f1;" class="mb:text-sm uppercase text-sm md:text-xl font-bold ">
                                         CURRET
                                     </h3>
-                                    <h3 style="color: #b6e3f1;" class=" uppercase text-sm md:text-xl font-bold ">
+                                    <h3 style="color: #b6e3f1;" class="mb:text-sm uppercase text-sm md:text-xl font-bold ">
                                          BALANCE
                                     </h3>
                                 </div>
@@ -116,13 +113,13 @@
                             <div class="flex flex-row info-display uppercase text-base items-end mb:info-display profileTextHeader mb:profileTextHeader">
                                 <div class="flex flex-row  space-x-2 text-base mb-2 text-start ">
                                     <span style="color:#05c069!important;" class="">$</span>
-                                    <div class="mb:py-1"> {{currentUser?.userWallet.balance}}</div>
+                                    <div class="mb:py-1 mb:text-md"> {{currentUser?.userWallet.balance}}</div>
                                 </div>  
                             </div>
-                            <div class="flex flex-row space-x-4 justify-start items-end">
+                            <div class="flex flex-row space-x-4 justify-start items-end editProfileBtn">
                                 <a onclick="editProfileSection()"><button
-                                        class="flex flex-row justify-start items-end shadow-xl btn-editProfile mb:btn-editProfile">
-                                        <svg class="mx-2" fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                        class="flex flex-row justify-start items-end shadow-xl btn-editProfile  ">
+                                        <svg class="mx-custom" fill="none" height="30" width="30" viewBox="0 0 24 24" 
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M2.00002 21.154C2.00002 16.6893 6.07022 15.0002 10 15.0002C11.2829 15.0002 12.5807 15.1802 13.7471 15.578"
@@ -150,7 +147,7 @@
         <!--////////////////////////////////////////////- EDIT PROFILE SECTION -/////////////////////////////////////////////////////////////////////////-->
         <section id="editProfile" class="cardOptions">
             <div class="flex flex-col justify-center items-center md:h-screen md:ml-20 ">
-                <div class="flex flex-col mt-24 bg-slate-800 relative space-y-12  rounded-xl shadow-lg md:w-1/3 mb:space-y-3 mb:mt-8 mb:mx-3 mb:h-screen">
+                <div class="flex flex-col mt-24 bg-slate-800 relative space-y-12  rounded-xl shadow-lg md:w-1/3 mb:space-y-2 mb:mt-6 mb:mx-3 mb:h-screen">
                     <div class="py-2">
                         <h3 class="text-center text-white text-3xl uppercase mb:text-xl">
                             update profile
@@ -158,13 +155,13 @@
                     </div>
                     <div class="flex justify-center ">
                         <img src="assets/imgs/default-person.png" alt=""
-                            class="w-28 h-28 rounded-full bg-slate-700 border-4 border-emerald-500 mb:h-5 mb:w-5" />
+                            class="w-28 h-28 rounded-full bg-slate-700 border-4 mb:border-2 border-emerald-500 mb:h-3 mb:w-3" />
                     </div>
                     <div class="flex flex-col justify-start items-start ">
                         <form (ngSubmit)="updateProfile()" #form="ngForm" enctype="multipart/form-data"
                             class="flex flex-col justify-start items-start ml-17 mb:ml-0  ">
                             <div class="flex flex-col">
-                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2 mb:text-sm mb:mb-1">
                                     First Name
                                 </label>
                                 <input type="text" placeholder="{{currentUser?.firstName}}"
@@ -172,7 +169,7 @@
                                     class="input-field-profileEdit text-white text-lg">
                             </div>
                             <div class="flex flex-col">
-                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2 mb:text-sm mb:mb-1">
                                     Surname
                                 </label>
                                 <input type="text" placeholder="{{currentUser?.secondName}}"
@@ -180,7 +177,7 @@
                                     class="input-field-profileEdit  text-white text-lg">
                             </div>
                             <div class="flex flex-col">
-                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2 mb:text-sm mb:mb-1">
                                     Phone-Number
                                 </label>
                                 <input type="text" placeholder="{{currentUser?.phoneNumber}}"
@@ -188,7 +185,7 @@
                                     class="input-field-profileEdit text-white text-lg">
                             </div>
                             <div class="flex flex-col">
-                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2 mb:text-sm mb:mb-1">
                                     address
                                 </label>
                                 <input type="text" placeholder="{{currentUser?.address}}"
@@ -196,21 +193,21 @@
                                     class="input-field-profileEdit text-white text-lg">
                             </div>
                             <div class="flex flex-col">
-                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2 mb:text-sm mb:mb-1" >
                                     email
                                 </label>
                                 <input type="text" placeholder="{{currentUser?.email}}" [(ngModel)]="updatedUser.email"
                                     name="email" class="input-field-profileEdit text-white text-lg">
                             </div>
                             <div class="flex flex-col">
-                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2">
+                                <label class="text-white uppercase text-base md:text-lg font-semibold ml-4 mb-2 mb:text-sm mb:mb-1">
                                     Profile Picture
                                 </label>
 
                                 <input type="file" multiple value="select" #selectFile (change)="onFileSelected($event)"
                                     class="input-field-profileEdit text-white text-lg">
                             </div>
-                            <button type="submit" class="btn-confirmation ml-17">Confirm</button>
+                            <button type="submit" class="btn-confirmation mb:btn-confirmation ml-17">Confirm</button>
                         </form>
                     </div>
                 </div>
@@ -224,7 +221,7 @@
         <section id="trans" class="cardOptions">
             <div class="flex flex-col justify-center items-center md:h-screen md:ml-20">
                 <div
-                    class="flex flex-col bg-slate-800 relative space-y-7 rounded-xl shadow-lg mt-32  md:w-1/2 mb:space-y-3 mb:mt-34 mb:mx-3 mb:h-screen">
+                    class="flex flex-col bg-slate-800 relative space-y-7 rounded-xl shadow-lg mt-32 md:w-1/2 mb:space-y-3 mb:mt-20 mb:mx-3 mb:h-screen">
                     <div class="py-4">
                         <h3 class="text-center text-white text-3xl uppercase mb:text-xl">
                             Withdraw
@@ -270,7 +267,7 @@
         <!--////////////////////////////////////////////- CONFIRM WITHDRAW SECTION -/////////////////////////////////////////////////////////////////////////-->
         <section id="transConfirm" class="cardOptions">
             <div class="flex flex-col justify-center items-center md:h-screen md:ml-20">
-                <div class="flex flex-col bg-slate-800 relative space-y-7 rounded-xl mt-32 shadow-lg md:mt-0 md:w-1/2 mb:space-y-3 mb:mt-34 mb:mx-3 mb:h-screen">
+                <div class="flex flex-col bg-slate-800 relative space-y-7 rounded-xl mt-32 shadow-lg md:mt-0 md:w-1/2 mb:space-y-3 mb:mx-3 mb:h-screen">
                     <div class="py-4">
                         <h3 class="text-center text-white text-3xl uppercase mb:text-xl">
                             Confirm withdrawal
@@ -316,9 +313,9 @@
 
         <!--////////////////////////////////////////////- DEPOSIT SECTION -/////////////////////////////////////////////////////////////////////////-->
         <section id="dep" class="cardOptions">
-            <div class="flex flex-col justify-center items-center md:h-screen md:ml-20">
+            <div class="flex flex-col justify-center items-center md:h-screen md:ml-20 ">
 
-                <div class="flex flex-col bg-slate-800 relative space-y-7 rounded-xl shadow-lg mt-32 sm:w-screen md:w-1/3 mb:space-y-3  mb:mx-3 mb:h-screen">
+                <div class="flex flex-col bg-slate-800 relative space-y-7 rounded-xl shadow-lg mt-32 mb:mt-20 mb:mx-3  md:w-1/2 mb:space-y-3 mb:mx-3 mb:h-screen">
                     <div class="py-2">
                         <h3 class="text-center text-white text-3xl uppercase">
                             Deposit information
@@ -328,18 +325,18 @@
                         <div class="text-xl text-white text-bold text-center">
                             <h2 style="color:#05c069;">BANK KEY</h2>
                         </div>
-                        <div class="flex-flex-col walletInfo text-xl text-white text-center w-full">
+                        <div class="flex-flex-col walletInfo text-xl text-white text-center w-full mb:p-4">
                             <div class="py-2">
                                 {{ currentUser?.userWallet.cvu}}
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col w-full justify-center items-center space-y-4">
+                    <div class="flex flex-col w-full justify-center items-center space-y-4 ">
                         <div class="text-xl text-white text-bold text-center">
                             <h2 style="color:#05c069;">ALIAS TAG</h2>
                         </div>
-                        <div class="flex-flex-col walletInfo  text-lg text-white text-center w-full">
-                            <div class="py-2 mb-12">
+                        <div class="flex-flex-col walletInfo  text-lg text-white text-center w-full mb:p-4">
+                            <div class="py-2 mb-12 ">
                                 {{ currentUser?.userWallet.alias}}
                             </div>
                         </div>
@@ -399,7 +396,7 @@
         <section id="settings" class="cardOptions">
             <div class="flex justify-center items-center md:h-screen md:ml-20">
                 <div
-                    class="flex flex-col bg-slate-800 relative justify-center items-center mt-32 space-y-4 rounded-xl shadow-lg sm:w-screen md:w-1/3 mb:space-y-3 mb:mt-34 mb:mx-3 mb:h-screen mb:w-2/3">
+                    class="flex flex-col bg-slate-800 relative justify-center items-center mt-32 space-y-4 rounded-xl shadow-lg sm:w-screen md:w-1/3 mb:space-y-3 mb:mt-12 mb:mx-3 mb:h-screen mb:w-2/3">
                     <div class="py-2">
                         <h3 class="text-center text-white text-3xl uppercase">
                             Settings
@@ -414,6 +411,10 @@
                     <div class="flex flex-col setting-option rounded-lg ">
                         <a (click)="contactSupport()" class="text-lg text-center py-2 px-3 settings-text"> contact support </a>
                     </div>
+                    <div class="flex flex-col setting-option rounded-lg display-on">
+                        <a onclick="editProfileSection()" class="text-lg text-center py-2 px-3 settings-text " > Edit Profile
+                        </a>
+                    </div>
                     <div class="flex flex-col setting-option rounded-lg" style="border-color: red!important;">
                         <a (click)="deleteAccount()" class="text-lg text-center py-2 px-3 settings-text " > delete account
                         </a>
@@ -422,6 +423,7 @@
                         <a (click)="logout()" class="text-lg text-center py-2 px-3 settings-text " > logout
                         </a>
                     </div>
+                   
                 </div>
             </div>
         </section>
@@ -452,9 +454,9 @@
         <!--////////////////////////////////////////////- CRYPTO CHART SECTION -/////////////////////////////////////////////////////////////////////////-->
         <section id="crypto" class="cardOptions">
             <div class="flex justify-center items-center md:h-screen md:ml-20 ">
-                <div class="flex flex-col bg-slate-800 relative space-y-2 rounded-xl mt-24 shadow-lg md:w-2/3 mb:mt-12 sm:w-screen">
+                <div class="flex flex-col bg-slate-800 relative space-y-2 mb:space-y-1 rounded-xl mt-24 shadow-lg md:w-2/3 mb:mt-6 sm:w-screen mb:mx-3">
                     <div class="py-2">
-                        <h3 class="text-start text-white text-2xl ml-4 uppercase">
+                        <h3 class="text-start text-white text-2xl mb:text-md ml-4 uppercase">
                             crypto market
                         </h3>
                     </div>
