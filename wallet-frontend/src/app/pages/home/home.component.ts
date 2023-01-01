@@ -277,7 +277,7 @@ export class HomeComponent implements OnInit {
       new Blob([JSON.stringify(updatedUser)], { type: 'application/json' })
     );
     if (updatedUser.img == null) {
-      formData.append('imgFile', new Blob([JSON.stringify(undefined)], { type: 'application/json' }));
+      formData.append('imgFile', new Blob([JSON.stringify(null)], { type: 'application/json' }));
     } else if (updatedUser.img != null) {
       for (var i = 0; i < updatedUser.img.length; i++) {
         formData.append(
