@@ -146,14 +146,7 @@ export class HomeComponent implements OnInit {
 
 
   /* ----------------components implementations methods-------------------*/
-  /* --------->RELOAD CURRENT PAGE<--------*/
-  reloadComponent() {
-    this.currentUser = this.userService.getCurrentUser().subscribe(
-      (data: any) => {
-        this.currentUser = data;
-        window.location.reload();
-      })
-  }
+  
 
   /* ----------------wallet implementations methods-------------------*/
   /* --------->WITHDRAW REQUEST<--------*/
