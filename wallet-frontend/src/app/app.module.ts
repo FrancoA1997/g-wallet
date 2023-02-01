@@ -20,7 +20,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { authInterceptorProviders } from './services/auth.interceptor';
 import { IndexComponent } from './pages/user/index/index.component';
 import {NgPipesModule} from 'ngx-pipes';
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -47,6 +47,8 @@ import {NgPipesModule} from 'ngx-pipes';
  
   ],
   providers: [
+    {provide: LocationStrategy,
+    useClass: HashLocationStrategy},
     authInterceptorProviders,
     LoadScriptsService
   ],
