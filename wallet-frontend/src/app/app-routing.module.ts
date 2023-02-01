@@ -20,6 +20,7 @@ const routes: Routes = [
   {
     path : 'home',
     component : HomeComponent,
+    runGuardsAndResolvers: "always",
     pathMatch : "full",
     canActivate : [UserGuard],
   },
